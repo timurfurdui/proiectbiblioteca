@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="dist/lib/ooxml-schemas-1.3.jar"/>
+	<classpathentry kind="lib" path="dist/lib/poi-3.14.jar"/>
+	<classpathentry kind="lib" path="dist/lib/poi-ooxml-3.14.jar"/>
+	<classpathentry kind="lib" path="dist/lib/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="dist/ProiectBiblioteca.jar"/>
+	<classpathentry kind="lib" path="ooxml-schemas-1.3.jar"/>
+	<classpathentry kind="lib" path="poi-3.14.jar"/>
+	<classpathentry kind="lib" path="poi-ooxml-3.14.jar"/>
+	<classpathentry kind="lib" path="xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="output" path="out/production/ProiectBiblioteca"/>
+</classpath>

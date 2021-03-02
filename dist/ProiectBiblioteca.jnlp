@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ProiectBiblioteca.jnlp">
+  <information>
+    <title>ProiectBiblioteca</title>
+    <vendor>User</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ProiectBiblioteca.jar" size="172955" download="eager" />
+    <jar href="lib\ooxml-schemas-1.3.jar" size="15555629" download="eager" />
+    <jar href="lib\poi-3.14.jar" size="2528204" download="eager" />
+    <jar href="lib\poi-ooxml-3.14.jar" size="1286511" download="eager" />
+    <jar href="lib\xmlbeans-2.6.0.jar" size="2730866" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="com.timur.databasebiblioteca.Main"  name="ProiectBiblioteca" />
+  <update check="always"/>
+</jnlp>
