@@ -5,7 +5,7 @@ import java.util.List;
 import com.timur.databasebiblioteca.model.Angajat;
 
 /**
- * @author User
+ * @author Timur
  */
 public interface AngajatMockIntF {
     public void salveazaAngajat(Angajat a);

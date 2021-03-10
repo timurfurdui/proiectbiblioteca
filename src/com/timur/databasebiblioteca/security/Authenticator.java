@@ -5,6 +5,9 @@ import com.timur.databasebiblioteca.gui.FXMLPaginaInregistrareController;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author Timur
+ */
 public class Authenticator extends FXMLPaginaInregistrareController {
 
     private static final Map<String, String> USERS = new HashMap<String, String>();

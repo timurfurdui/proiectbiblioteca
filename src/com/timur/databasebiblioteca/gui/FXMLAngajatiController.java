@@ -27,7 +27,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import com.timur.databasebiblioteca.util.CSVUtilAngajat;
 
 /**
- * @author User
+ * @author Timur
  */
 public class FXMLAngajatiController implements Initializable, FormIntF<Angajat> {
 

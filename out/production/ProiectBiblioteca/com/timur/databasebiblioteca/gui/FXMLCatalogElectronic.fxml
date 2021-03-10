@@ -9,119 +9,115 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<BorderPane xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="work.bprtelenesti.proiectbiblioteca.gui.FXMLCatalogElectronicController">
-   <center>
-      <AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="800.0" styleClass="background" stylesheets="@resources/CatalogElectronicStyle.css">
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="800.0" styleClass="background" stylesheets="@resources/CatalogElectronicStyle.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.timur.databasebiblioteca.gui.FXMLCatalogElectronicController">
+   <children>
+      <Label layoutX="293.0" layoutY="25.0" prefHeight="40.0" prefWidth="184.0" text="Catalog electronic" textAlignment="CENTER" />
+      <Hyperlink layoutX="45.0" layoutY="33.0" onAction="#handleButtonActionInapoi" text="&lt;&lt;" />
+      <GridPane layoutX="30.0" layoutY="360.0" prefHeight="30.0" prefWidth="740.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
          <children>
-            <Label layoutX="293.0" layoutY="25.0" prefHeight="40.0" prefWidth="184.0" text="Catalog electronic" textAlignment="CENTER" />
-            <Hyperlink layoutX="45.0" layoutY="33.0" onAction="#handleButtonActionInapoi" text="&lt;&lt;" />
-            <GridPane layoutX="30.0" layoutY="360.0" prefHeight="30.0" prefWidth="740.0">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <children>
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionSalveaza" prefHeight="43.0" prefWidth="80.0" text="Save" GridPane.rowIndex="1" />
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionActualizeaza" prefHeight="43.0" prefWidth="80.0" text="Refresh" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionCurata" prefHeight="43.0" prefWidth="80.0" text="Clear" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionSterge" prefHeight="43.0" prefWidth="80.0" text="Delete" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionCautare" prefHeight="43.0" prefWidth="80.0" text="Search" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionCautaTot" prefHeight="43.0" prefWidth="80.0" text="FindAll" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionImport" prefHeight="43.0" prefWidth="80.0" text="Import" GridPane.columnIndex="6" GridPane.rowIndex="1" />
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionExport" prefHeight="43.0" prefWidth="80.0" text="Export" GridPane.columnIndex="7" GridPane.rowIndex="1" />
-               </children>
-            </GridPane>
-            <GridPane layoutX="34.0" layoutY="100.0" prefHeight="247.0" prefWidth="730.0">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="227.0" minWidth="10.0" prefWidth="172.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.0" minWidth="10.0" prefWidth="197.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="212.0" minWidth="10.0" prefWidth="207.0" />
-                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="212.0" minWidth="10.0" prefWidth="207.0" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <children>
-                  <TextField fx:id="tfNrDeInregistrare" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" />
-                  <TextField fx:id="tfTitlu" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <TextField fx:id="tfAutor" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <TextField fx:id="tfLoculPublicarii" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <DatePicker fx:id="dpAnulPublicarii" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                  <TextField fx:id="tfISBN" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                  <TextField fx:id="tfGen" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                  <TextField fx:id="tfClasificareCZU" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="3" />
-                  <TextField fx:id="tfNumarInventar" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-                  <DatePicker fx:id="dpDataPrimirii" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-                  <ComboBox fx:id="cbRepartizareOficii" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-                  <ComboBox fx:id="cbTipDocument" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-                  <ComboBox fx:id="cbLimbaDeEditare" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-                  <TextField fx:id="tfDescriereaBibliografica" prefHeight="31.0" prefWidth="117.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
-                  <Label prefHeight="20.0" prefWidth="174.0" text="Nr de inregistrare" />
-                  <Label prefHeight="20.0" prefWidth="174.0" text="Titlu" GridPane.rowIndex="1" />
-                  <Label prefHeight="20.0" prefWidth="174.0" text="Autor" GridPane.rowIndex="2" />
-                  <Label prefHeight="20.0" prefWidth="174.0" text="Locul publicarii" GridPane.rowIndex="3" />
-                  <Label prefHeight="20.0" prefWidth="174.0" text="Anul publicarii" GridPane.rowIndex="4" />
-                  <Label prefHeight="20.0" prefWidth="174.0" text="ISBN" GridPane.rowIndex="5" />
-                  <Label prefHeight="20.0" prefWidth="174.0" text="Gen" GridPane.rowIndex="6" />
-                  <Label prefHeight="20.0" prefWidth="174.0" text=" Clasificare CZU" GridPane.columnIndex="2" />
-                  <Label prefHeight="20.0" prefWidth="174.0" text=" Numar inventar" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                  <Label prefHeight="20.0" prefWidth="174.0" text=" Data primirii" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                  <Label prefHeight="20.0" prefWidth="174.0" text=" Repartizare oficii" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                  <Label prefHeight="20.0" prefWidth="174.0" text=" Tip document" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                  <Label prefHeight="20.0" prefWidth="174.0" text=" Limba de editare" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                  <Label prefHeight="21.0" prefWidth="222.0" text=" Desc. bibliografica" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-               </children>
-            </GridPane>
-            <GridPane layoutX="30.0" layoutY="402.0" prefHeight="196.0" prefWidth="730.0">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <children>
-                  <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0">
-                    <columns>
-                      <TableColumn fx:id="twNrDeInregistrare" prefWidth="30.0" text="1" />
-                      <TableColumn fx:id="twTitlu" prefWidth="75.0" text="2" />
-                        <TableColumn fx:id="twAutor" prefWidth="75.0" text="3" />
-                        <TableColumn fx:id="twLoculPublicarii" prefWidth="75.0" text="4" />
-                        <TableColumn fx:id="twAnulPublicarii" prefWidth="75.0" text="5" />
-                        <TableColumn fx:id="twISBN" prefWidth="75.0" text="6" />
-                        <TableColumn fx:id="twGen" prefWidth="75.0" text="7" />
-                        <TableColumn fx:id="twClasificareCZU" prefWidth="75.0" text="8" />
-                        <TableColumn fx:id="twNumarInventar" prefWidth="75.0" text="9" />
-                        <TableColumn fx:id="twDataprimirii" prefWidth="75.0" text="10" />
-                        <TableColumn fx:id="twRepartizareoficii" prefWidth="75.0" text="11" />
-                        <TableColumn fx:id="twTipDocument" prefWidth="75.0" text="12" />
-                        <TableColumn fx:id="twLimbaEditare" prefWidth="75.0" text="13" />
-                        <TableColumn fx:id="twDescriereBibliografica" prefWidth="75.0" text="14" />
-                    </columns>
-                  </TableView>
-               </children>
-            </GridPane>
+            <Button mnemonicParsing="false" onAction="#handleButtonActionSalveaza" prefHeight="43.0" prefWidth="80.0" text="Save" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#handleButtonActionActualizeaza" prefHeight="43.0" prefWidth="80.0" text="Refresh" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#handleButtonActionCurata" prefHeight="43.0" prefWidth="80.0" text="Clear" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#handleButtonActionSterge" prefHeight="43.0" prefWidth="80.0" text="Delete" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#handleButtonActionCautare" prefHeight="43.0" prefWidth="80.0" text="Search" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#handleButtonActionCautaTot" prefHeight="43.0" prefWidth="80.0" text="FindAll" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#handleButtonActionImport" prefHeight="43.0" prefWidth="80.0" text="Import" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#handleButtonActionExport" prefHeight="43.0" prefWidth="80.0" text="Export" GridPane.columnIndex="7" GridPane.rowIndex="1" />
          </children>
-      </AnchorPane>
-   </center>
-</BorderPane>
+      </GridPane>
+      <GridPane layoutX="34.0" layoutY="100.0" prefHeight="247.0" prefWidth="730.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="227.0" minWidth="10.0" prefWidth="172.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.0" minWidth="10.0" prefWidth="197.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="212.0" minWidth="10.0" prefWidth="207.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="212.0" minWidth="10.0" prefWidth="207.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="tfNrDeInregistrare" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" />
+            <TextField fx:id="tfTitlu" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="tfAutor" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="tfLoculPublicarii" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <DatePicker fx:id="dpAnulPublicarii" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="tfISBN" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="tfGen" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="tfClasificareCZU" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="3" />
+            <TextField fx:id="tfNumarInventar" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <DatePicker fx:id="dpDataPrimirii" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <ComboBox fx:id="cbRepartizareOficii" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <ComboBox fx:id="cbTipDocument" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <ComboBox fx:id="cbLimbaDeEditare" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <TextField fx:id="tfDescriereaBibliografica" prefHeight="31.0" prefWidth="117.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label prefHeight="20.0" prefWidth="174.0" text="Nr de inregistrare" />
+            <Label prefHeight="20.0" prefWidth="174.0" text="Titlu" GridPane.rowIndex="1" />
+            <Label prefHeight="20.0" prefWidth="174.0" text="Autor" GridPane.rowIndex="2" />
+            <Label prefHeight="20.0" prefWidth="174.0" text="Locul publicarii" GridPane.rowIndex="3" />
+            <Label prefHeight="20.0" prefWidth="174.0" text="Anul publicarii" GridPane.rowIndex="4" />
+            <Label prefHeight="20.0" prefWidth="174.0" text="ISBN" GridPane.rowIndex="5" />
+            <Label prefHeight="20.0" prefWidth="174.0" text="Gen" GridPane.rowIndex="6" />
+            <Label prefHeight="20.0" prefWidth="174.0" text=" Clasificare CZU" GridPane.columnIndex="2" />
+            <Label prefHeight="20.0" prefWidth="174.0" text=" Numar inventar" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label prefHeight="20.0" prefWidth="174.0" text=" Data primirii" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label prefHeight="20.0" prefWidth="174.0" text=" Repartizare oficii" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label prefHeight="20.0" prefWidth="174.0" text=" Tip document" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label prefHeight="20.0" prefWidth="174.0" text=" Limba de editare" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label prefHeight="21.0" prefWidth="222.0" text=" Desc. bibliografica" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="30.0" layoutY="402.0" prefHeight="196.0" prefWidth="730.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="twNrDeInregistrare" prefWidth="30.0" text="1" />
+                <TableColumn fx:id="twTitlu" prefWidth="75.0" text="2" />
+                  <TableColumn fx:id="twAutor" prefWidth="75.0" text="3" />
+                  <TableColumn fx:id="twLoculPublicarii" prefWidth="75.0" text="4" />
+                  <TableColumn fx:id="twAnulPublicarii" prefWidth="75.0" text="5" />
+                  <TableColumn fx:id="twISBN" prefWidth="75.0" text="6" />
+                  <TableColumn fx:id="twGen" prefWidth="75.0" text="7" />
+                  <TableColumn fx:id="twClasificareCZU" prefWidth="75.0" text="8" />
+                  <TableColumn fx:id="twNumarInventar" prefWidth="75.0" text="9" />
+                  <TableColumn fx:id="twDataprimirii" prefWidth="75.0" text="10" />
+                  <TableColumn fx:id="twRepartizareoficii" prefWidth="75.0" text="11" />
+                  <TableColumn fx:id="twTipDocument" prefWidth="75.0" text="12" />
+                  <TableColumn fx:id="twLimbaEditare" prefWidth="75.0" text="13" />
+                  <TableColumn fx:id="twDescriereBibliografica" prefWidth="75.0" text="14" />
+              </columns>
+            </TableView>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

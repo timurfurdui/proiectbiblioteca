@@ -5,7 +5,7 @@ import com.timur.databasebiblioteca.model.Utilizator;
 import java.util.List;
 
 /**
- * @author User
+ * @author Timur
  */
 public interface UtilizatorMockIntF {
     public void salveazaUtilizator(Utilizator u);

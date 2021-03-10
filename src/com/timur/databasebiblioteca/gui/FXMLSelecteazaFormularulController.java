@@ -9,7 +9,7 @@ import javafx.fxml.Initializable;
 import com.timur.databasebiblioteca.Main;
 
 /**
- * @author User
+ * @author Timur
  */
 public class FXMLSelecteazaFormularulController implements Initializable {
 

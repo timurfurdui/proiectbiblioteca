@@ -28,7 +28,7 @@ import com.timur.databasebiblioteca.service.impl.VoluntarMockImpl;
 import com.timur.databasebiblioteca.util.CSVUtilVoluntar;
 
 /**
- * @author User
+ * @author Timur
  */
 public class FXMLVoluntariController implements Initializable, FormIntF<Voluntar> {
 

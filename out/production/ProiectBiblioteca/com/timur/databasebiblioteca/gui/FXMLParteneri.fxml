@@ -8,92 +8,88 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<BorderPane xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="work.bprtelenesti.proiectbiblioteca.gui.FXMLParteneriController">
-   <center>
-      <AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="800.0" styleClass="background" stylesheets="@resources/CatalogElectronicStyle.css">
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="800.0" styleClass="background" stylesheets="@resources/CatalogElectronicStyle.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.timur.databasebiblioteca.gui.FXMLParteneriController">
+   <children>
+      <Label layoutX="293.0" layoutY="25.0" prefHeight="40.0" prefWidth="184.0" text="Parteneri" textAlignment="CENTER" />
+      <Hyperlink layoutX="45.0" layoutY="33.0" onAction="#handleButtonActionInapoi" text="&lt;&lt;" />
+      <GridPane layoutX="45.0" layoutY="100.0" prefHeight="237.0" prefWidth="441.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="234.0" minWidth="10.0" prefWidth="234.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.0" minWidth="10.0" prefWidth="182.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
          <children>
-            <Label layoutX="293.0" layoutY="25.0" prefHeight="40.0" prefWidth="184.0" text="Parteneri" textAlignment="CENTER" />
-            <Hyperlink layoutX="45.0" layoutY="33.0" onAction="#handleButtonActionInapoi" text="&lt;&lt;" />
-            <GridPane layoutX="45.0" layoutY="100.0" prefHeight="237.0" prefWidth="441.0">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="234.0" minWidth="10.0" prefWidth="234.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.0" minWidth="10.0" prefWidth="182.0" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <children>
-                  <TextField fx:id="tfNrDeInregistrare" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" />
-                  <TextField fx:id="tfNumelePartenerului" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <TextField fx:id="tfDomeniulDeActivitate" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <TextField fx:id="tfNumarulSemnarii" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <DatePicker fx:id="dpDataSemnarii" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                  <DatePicker fx:id="dpValabilitateaContractului" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                  <TextField fx:id="tfScopulParteneriatului" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                  <Label prefHeight="20.0" prefWidth="174.0" text="Nr de inregistrare" />
-                  <Label prefHeight="21.0" prefWidth="206.0" text="Numele partenerului" GridPane.rowIndex="1" />
-                  <Label prefHeight="21.0" prefWidth="206.0" text="Domeniul de activitate" GridPane.rowIndex="2" />
-                  <Label prefHeight="21.0" prefWidth="184.0" text="Nr. acord / contract" GridPane.rowIndex="3" />
-                  <Label prefHeight="20.0" prefWidth="174.0" text="Data semnarii" GridPane.rowIndex="4" />
-                  <Label prefHeight="21.0" prefWidth="217.0" text="Valabilitatea contractului" GridPane.rowIndex="5" />
-                  <Label prefHeight="21.0" prefWidth="217.0" text="Scopul parteneriatului" GridPane.rowIndex="6" />
-               </children>
-            </GridPane>
-            <GridPane layoutX="506.0" layoutY="100.0" prefHeight="245.0" prefWidth="267.0">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <children>
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionSalveaza" prefHeight="43.0" prefWidth="123.0" text="Save" />
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionActualizeaza" prefHeight="43.0" prefWidth="123.0" text="Refresh" GridPane.columnIndex="1" />
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionSterge" prefHeight="43.0" prefWidth="123.0" text="Delete" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionCautare" prefHeight="43.0" prefWidth="123.0" text="Search" GridPane.rowIndex="2" />
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionCautaTot" prefHeight="43.0" prefWidth="123.0" text="FindAll" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionImport" prefHeight="43.0" prefWidth="123.0" text="Import" GridPane.rowIndex="3" />
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionExport" prefHeight="43.0" prefWidth="123.0" text="Export" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionCurata" prefHeight="43.0" prefWidth="123.0" text="Clear" GridPane.rowIndex="1" />
-               </children>
-            </GridPane>
-            <GridPane layoutX="45.0" layoutY="349.0" prefHeight="237.0" prefWidth="721.0">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <children>
-                  <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0">
-                    <columns>
-                      <TableColumn fx:id="twNrDeInregistrare" prefWidth="30.0" text="1" />
-                      <TableColumn fx:id="twNumelePartenerului" prefWidth="110.0" text="2" />
-                        <TableColumn fx:id="twDomeniulDeActivitate" prefWidth="116.0" text="3" />
-                        <TableColumn fx:id="twNrContractului" prefWidth="94.0" text="4" />
-                        <TableColumn fx:id="twDataSemnarii" prefWidth="121.0" text="5" />
-                        <TableColumn fx:id="twValoareaContractului" prefWidth="103.0" text="6" />
-                        <TableColumn fx:id="twScopulParteneriatului" prefWidth="120.0" text="7" />
-                    </columns>
-                  </TableView>
-               </children>
-            </GridPane>
+            <TextField fx:id="tfNrDeInregistrare" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" />
+            <TextField fx:id="tfNumelePartenerului" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="tfDomeniulDeActivitate" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="tfNumarulSemnarii" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <DatePicker fx:id="dpDataSemnarii" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <DatePicker fx:id="dpValabilitateaContractului" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="tfScopulParteneriatului" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label prefHeight="20.0" prefWidth="174.0" text="Nr de inregistrare" />
+            <Label prefHeight="21.0" prefWidth="206.0" text="Numele partenerului" GridPane.rowIndex="1" />
+            <Label prefHeight="21.0" prefWidth="206.0" text="Domeniul de activitate" GridPane.rowIndex="2" />
+            <Label prefHeight="21.0" prefWidth="184.0" text="Nr. acord / contract" GridPane.rowIndex="3" />
+            <Label prefHeight="20.0" prefWidth="174.0" text="Data semnarii" GridPane.rowIndex="4" />
+            <Label prefHeight="21.0" prefWidth="217.0" text="Valabilitatea contractului" GridPane.rowIndex="5" />
+            <Label prefHeight="21.0" prefWidth="217.0" text="Scopul parteneriatului" GridPane.rowIndex="6" />
          </children>
-      </AnchorPane>
-   </center>
-</BorderPane>
+      </GridPane>
+      <GridPane layoutX="506.0" layoutY="100.0" prefHeight="245.0" prefWidth="267.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleButtonActionSalveaza" prefHeight="43.0" prefWidth="123.0" text="Save" />
+            <Button mnemonicParsing="false" onAction="#handleButtonActionActualizeaza" prefHeight="43.0" prefWidth="123.0" text="Refresh" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" onAction="#handleButtonActionSterge" prefHeight="43.0" prefWidth="123.0" text="Delete" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#handleButtonActionCautare" prefHeight="43.0" prefWidth="123.0" text="Search" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#handleButtonActionCautaTot" prefHeight="43.0" prefWidth="123.0" text="FindAll" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#handleButtonActionImport" prefHeight="43.0" prefWidth="123.0" text="Import" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#handleButtonActionExport" prefHeight="43.0" prefWidth="123.0" text="Export" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#handleButtonActionCurata" prefHeight="43.0" prefWidth="123.0" text="Clear" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="45.0" layoutY="349.0" prefHeight="237.0" prefWidth="721.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="twNrDeInregistrare" prefWidth="30.0" text="1" />
+                <TableColumn fx:id="twNumelePartenerului" prefWidth="110.0" text="2" />
+                  <TableColumn fx:id="twDomeniulDeActivitate" prefWidth="116.0" text="3" />
+                  <TableColumn fx:id="twNrContractului" prefWidth="94.0" text="4" />
+                  <TableColumn fx:id="twDataSemnarii" prefWidth="121.0" text="5" />
+                  <TableColumn fx:id="twValoareaContractului" prefWidth="103.0" text="6" />
+                  <TableColumn fx:id="twScopulParteneriatului" prefWidth="120.0" text="7" />
+              </columns>
+            </TableView>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

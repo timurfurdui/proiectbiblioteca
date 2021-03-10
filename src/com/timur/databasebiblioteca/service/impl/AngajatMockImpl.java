@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author User
+ * @author Timur
  */
 public class AngajatMockImpl implements AngajatMockIntF {
     List<Angajat> listaAngajati;

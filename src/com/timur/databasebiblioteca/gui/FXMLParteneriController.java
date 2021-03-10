@@ -31,7 +31,7 @@ import com.timur.databasebiblioteca.service.impl.PartenerMockImpl;
 import com.timur.databasebiblioteca.util.CSVUtilPartener;
 
 /**
- * @author User
+ * @author Timur
  */
 public class FXMLParteneriController implements Initializable, FormIntF<Partener> {
 

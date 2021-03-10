@@ -31,7 +31,7 @@ import com.timur.databasebiblioteca.service.impl.FinantatorDonatorMockImpl;
 import com.timur.databasebiblioteca.util.CSVUtilFinantatorDonator;
 
 /**
- * @author User
+ * @author Timur
  */
 public class FXMLFinantatoriDonatoriController implements Initializable, FormIntF<FinantatorDonator> {
 

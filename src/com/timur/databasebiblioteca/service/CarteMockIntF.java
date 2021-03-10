@@ -5,7 +5,7 @@ import java.util.List;
 import com.timur.databasebiblioteca.model.Carte;
 
 /**
- * @author User
+ * @author Timur
  */
 public interface CarteMockIntF {
     public void salveazaCarte(Carte c);

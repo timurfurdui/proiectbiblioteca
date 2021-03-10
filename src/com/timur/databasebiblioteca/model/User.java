@@ -3,6 +3,9 @@ package com.timur.databasebiblioteca.model;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author Timur
+ */
 public class User {
 
     private static final Map<String, User> USERS = new HashMap<String, User>();

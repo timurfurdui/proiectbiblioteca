@@ -5,7 +5,7 @@ import com.timur.databasebiblioteca.model.Partener;
 import java.util.List;
 
 /**
- * @author User
+ * @author Timur
  */
 public interface PartenerMockIntF {
     public void salveazaPartener(Partener p);

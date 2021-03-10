@@ -27,7 +27,7 @@ import com.timur.databasebiblioteca.service.impl.UtilizatorMockImpl;
 import com.timur.databasebiblioteca.util.CSVUtilUtilizator;
 
 /**
- * @author User
+ * @author Timur
  */
 public class FXMLUtilizatoriiBiblioteciiController implements Initializable, FormIntF<Utilizator> {
 

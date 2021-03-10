@@ -5,7 +5,7 @@ import com.timur.databasebiblioteca.model.Voluntar;
 import java.util.List;
 
 /**
- * @author User
+ * @author Timur
  */
 public interface VoluntarMockIntF {
     public void salveazaVoluntar(Voluntar v);

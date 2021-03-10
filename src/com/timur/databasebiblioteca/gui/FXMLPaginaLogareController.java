@@ -12,7 +12,7 @@ import javafx.scene.control.TextField;
 import com.timur.databasebiblioteca.Main;
 
 /**
- * @author User
+ * @author Timur
  */
 public class FXMLPaginaLogareController implements Initializable {
 

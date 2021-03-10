@@ -4,7 +4,7 @@ import java.util.Date;
 import java.util.Objects;
 
 /**
- * @author User
+ * @author Timur
  */
 public class Voluntar {
 

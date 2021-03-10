@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author User
+ * @author Timur
  */
 public class CarteMockImpl implements CarteMockIntF {
     List<Carte> listaCarti;

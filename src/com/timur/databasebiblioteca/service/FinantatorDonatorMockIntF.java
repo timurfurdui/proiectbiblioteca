@@ -5,7 +5,7 @@ import com.timur.databasebiblioteca.model.FinantatorDonator;
 import java.util.List;
 
 /**
- * @author User
+ * @author Timur
  */
 public interface FinantatorDonatorMockIntF {
     public void salveazaFinantatorDonator(FinantatorDonator fd);

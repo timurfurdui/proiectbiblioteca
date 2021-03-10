@@ -18,7 +18,7 @@ import com.timur.databasebiblioteca.model.Carte;
 import com.timur.databasebiblioteca.service.CarteIOIntF;
 
 /**
- * @author User
+ * @author Timur
  */
 public class CarteIOExcelImpl implements CarteIOIntF {
 

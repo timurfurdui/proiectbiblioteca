@@ -19,7 +19,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * @author User
+ * @author Timur
  */
 public class VoluntarIOExcelImpl implements VoluntarIOIntF {
     private Stage stage;

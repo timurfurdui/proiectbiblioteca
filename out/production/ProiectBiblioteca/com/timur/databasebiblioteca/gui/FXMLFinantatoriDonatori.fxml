@@ -8,100 +8,96 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<BorderPane xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="work.bprtelenesti.proiectbiblioteca.gui.FXMLFinantatoriDonatoriController">
-   <center>
-      <AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="800.0" styleClass="background" stylesheets="@resources/CatalogElectronicStyle.css">
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="800.0" styleClass="background" stylesheets="@resources/CatalogElectronicStyle.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.timur.databasebiblioteca.gui.FXMLFinantatoriDonatoriController">
+   <children>
+      <Label layoutX="293.0" layoutY="25.0" prefHeight="40.0" prefWidth="184.0" text="Finantatori / Donatori" textAlignment="CENTER" />
+      <Hyperlink layoutX="45.0" layoutY="33.0" onAction="#handleButtonActionInapoi" text="&lt;&lt;" />
+      <GridPane layoutX="45.0" layoutY="100.0" prefHeight="300.0" prefWidth="426.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="10.0" prefWidth="222.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="10.0" prefWidth="187.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
          <children>
-            <Label layoutX="293.0" layoutY="25.0" prefHeight="40.0" prefWidth="184.0" text="Finantatori / Donatori" textAlignment="CENTER" />
-            <Hyperlink layoutX="45.0" layoutY="33.0" onAction="#handleButtonActionInapoi" text="&lt;&lt;" />
-            <GridPane layoutX="45.0" layoutY="100.0" prefHeight="300.0" prefWidth="426.0">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="10.0" prefWidth="222.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="10.0" prefWidth="187.0" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <children>
-                  <TextField fx:id="tfNrDeInregistrare" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" />
-                  <TextField fx:id="tfNumeOrgPers" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <TextField fx:id="tfAutotfAdresaJuridicar" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <TextField fx:id="tfDateDeContact" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <TextField fx:id="tfInfoFinatator" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                  <TextField fx:id="tfScopulFinatarii" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                  <DatePicker fx:id="dpAnulFinatarii" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                  <TextField fx:id="tfValoareaFinantarii" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-                  <TextField fx:id="tfAlteMentiuni" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-                  <Label prefHeight="20.0" prefWidth="174.0" text="Nr de inregistrare" />
-                  <Label prefHeight="21.0" prefWidth="217.0" text="Nume Org. / persoana" GridPane.rowIndex="1" />
-                  <Label prefHeight="20.0" prefWidth="174.0" text="Adresa juridica" GridPane.rowIndex="2" />
-                  <Label prefHeight="20.0" prefWidth="174.0" text="Date de contact" GridPane.rowIndex="3" />
-                  <Label prefHeight="20.0" prefWidth="174.0" text="Info finantator" GridPane.rowIndex="4" />
-                  <Label prefHeight="21.0" prefWidth="217.0" text="Scopul finantarii/donarii" GridPane.rowIndex="5" />
-                  <Label prefHeight="21.0" prefWidth="206.0" text="Anul finantarii/donarii" GridPane.rowIndex="6" />
-                  <Label prefHeight="21.0" prefWidth="206.0" text="Valoarea finantarii" GridPane.rowIndex="7" />
-                  <Label prefHeight="20.0" prefWidth="174.0" text="Alte mentiuni" GridPane.rowIndex="8" />
-               </children>
-            </GridPane>
-            <GridPane layoutX="506.0" layoutY="94.0" prefHeight="244.0" prefWidth="270.0">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <children>
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionSalveaza" prefHeight="43.0" prefWidth="123.0" text="Save" />
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionActualizeaza" prefHeight="43.0" prefWidth="123.0" text="Refresh" GridPane.columnIndex="1" />
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionSterge" prefHeight="43.0" prefWidth="123.0" text="Delete" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionCautare" prefHeight="43.0" prefWidth="123.0" text="Search" GridPane.rowIndex="2" />
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionCautaTot" prefHeight="43.0" prefWidth="123.0" text="FindAll" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionImport" prefHeight="43.0" prefWidth="123.0" text="Import" GridPane.rowIndex="3" />
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionExport" prefHeight="43.0" prefWidth="123.0" text="Export" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <Button mnemonicParsing="false" onAction="#handleButtonActionCurata" prefHeight="43.0" prefWidth="123.0" text="Clear" GridPane.rowIndex="1" />
-               </children>
-            </GridPane>
-            <GridPane layoutX="45.0" layoutY="413.0" prefHeight="186.0" prefWidth="722.0">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <children>
-                  <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0">
-                    <columns>
-                      <TableColumn fx:id="twNrDeInregistrare" prefWidth="30.0" text="1" />
-                      <TableColumn fx:id="twNumeOrgPers" prefWidth="89.0" text="2" />
-                        <TableColumn fx:id="twAdrJurid" prefWidth="92.0" text="3" />
-                        <TableColumn fx:id="twDateConatct" prefWidth="88.0" text="4" />
-                        <TableColumn fx:id="twInfoFinatator" prefWidth="84.0" text="5" />
-                        <TableColumn fx:id="twScopulFinantarii" prefWidth="83.0" text="6" />
-                        <TableColumn fx:id="twAnulFinantarii" prefWidth="75.0" text="7" />
-                        <TableColumn fx:id="twValoareaFinantarii" prefWidth="77.0" text="8" />
-                        <TableColumn fx:id="twAlteMentiuni" prefWidth="89.0" text="9" />
-                    </columns>
-                  </TableView>
-               </children>
-            </GridPane>
+            <TextField fx:id="tfNrDeInregistrare" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" />
+            <TextField fx:id="tfNumeOrgPers" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="tfAutotfAdresaJuridicar" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="tfDateDeContact" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="tfInfoFinatator" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="tfScopulFinatarii" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <DatePicker fx:id="dpAnulFinatarii" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="tfValoareaFinantarii" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="tfAlteMentiuni" prefHeight="30.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label prefHeight="20.0" prefWidth="174.0" text="Nr de inregistrare" />
+            <Label prefHeight="21.0" prefWidth="217.0" text="Nume Org. / persoana" GridPane.rowIndex="1" />
+            <Label prefHeight="20.0" prefWidth="174.0" text="Adresa juridica" GridPane.rowIndex="2" />
+            <Label prefHeight="20.0" prefWidth="174.0" text="Date de contact" GridPane.rowIndex="3" />
+            <Label prefHeight="20.0" prefWidth="174.0" text="Info finantator" GridPane.rowIndex="4" />
+            <Label prefHeight="21.0" prefWidth="217.0" text="Scopul finantarii/donarii" GridPane.rowIndex="5" />
+            <Label prefHeight="21.0" prefWidth="206.0" text="Anul finantarii/donarii" GridPane.rowIndex="6" />
+            <Label prefHeight="21.0" prefWidth="206.0" text="Valoarea finantarii" GridPane.rowIndex="7" />
+            <Label prefHeight="20.0" prefWidth="174.0" text="Alte mentiuni" GridPane.rowIndex="8" />
          </children>
-      </AnchorPane>
-   </center>
-</BorderPane>
+      </GridPane>
+      <GridPane layoutX="506.0" layoutY="94.0" prefHeight="244.0" prefWidth="270.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleButtonActionSalveaza" prefHeight="43.0" prefWidth="123.0" text="Save" />
+            <Button mnemonicParsing="false" onAction="#handleButtonActionActualizeaza" prefHeight="43.0" prefWidth="123.0" text="Refresh" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" onAction="#handleButtonActionSterge" prefHeight="43.0" prefWidth="123.0" text="Delete" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#handleButtonActionCautare" prefHeight="43.0" prefWidth="123.0" text="Search" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#handleButtonActionCautaTot" prefHeight="43.0" prefWidth="123.0" text="FindAll" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#handleButtonActionImport" prefHeight="43.0" prefWidth="123.0" text="Import" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#handleButtonActionExport" prefHeight="43.0" prefWidth="123.0" text="Export" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#handleButtonActionCurata" prefHeight="43.0" prefWidth="123.0" text="Clear" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="45.0" layoutY="413.0" prefHeight="186.0" prefWidth="722.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="twNrDeInregistrare" prefWidth="30.0" text="1" />
+                <TableColumn fx:id="twNumeOrgPers" prefWidth="89.0" text="2" />
+                  <TableColumn fx:id="twAdrJurid" prefWidth="92.0" text="3" />
+                  <TableColumn fx:id="twDateConatct" prefWidth="88.0" text="4" />
+                  <TableColumn fx:id="twInfoFinatator" prefWidth="84.0" text="5" />
+                  <TableColumn fx:id="twScopulFinantarii" prefWidth="83.0" text="6" />
+                  <TableColumn fx:id="twAnulFinantarii" prefWidth="75.0" text="7" />
+                  <TableColumn fx:id="twValoareaFinantarii" prefWidth="77.0" text="8" />
+                  <TableColumn fx:id="twAlteMentiuni" prefWidth="89.0" text="9" />
+              </columns>
+            </TableView>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

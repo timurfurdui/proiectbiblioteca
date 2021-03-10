@@ -27,7 +27,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import com.timur.databasebiblioteca.util.CSVUtilCarte;
 
 /**
- * @author User
+ * @author Timur
  */
 public class FXMLCatalogElectronicController implements Initializable, FormIntF<Carte> {
 

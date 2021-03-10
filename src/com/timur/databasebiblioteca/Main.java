@@ -12,7 +12,7 @@ import com.timur.databasebiblioteca.gui.FXMLVoluntariController;
 import java.io.InputStream;
 
 import javafx.geometry.Rectangle2D;
-import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Screen;
 import com.timur.databasebiblioteca.security.Authenticator;
 
@@ -28,14 +28,13 @@ import javafx.stage.Stage;
 import com.timur.databasebiblioteca.model.User;
 
 /**
- * @author User
+ * @author Timur
  */
 public class Main extends Application {
     private Stage stage;
     private User loggedUser;
     private final double MINIMUM_WINDOW_WIDTH = 800.0;
     private final double MINIMUM_WINDOW_HEIGHT = 645.0;
-    private final Rectangle2D primaryScreenBounds = Screen.getPrimary().getVisualBounds();
     /**
      * @param args the command line arguments
      */
@@ -51,10 +50,6 @@ public class Main extends Application {
             primaryStage.setMinWidth(MINIMUM_WINDOW_WIDTH);
             primaryStage.setMinHeight(MINIMUM_WINDOW_HEIGHT);
             gotoPaginaLogare();
-            stage.setX(primaryScreenBounds.getMinX());
-            stage.setY(primaryScreenBounds.getMinY());
-            stage.setWidth(primaryScreenBounds.getWidth());
-            stage.setHeight(primaryScreenBounds.getHeight());
             primaryStage.show();
             } catch (Exception ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
@@ -80,14 +75,14 @@ public class Main extends Application {
         InputStream in = Main.class.getResourceAsStream(fxml);
         loader.setBuilderFactory(new JavaFXBuilderFactory());
         loader.setLocation(Main.class.getResource(fxml));
-        BorderPane page;
+        AnchorPane page;
         try {
-            page = (BorderPane) loader.load(in);
+            page = (AnchorPane) loader.load(in);
             System.out.println(page);
         } finally {
             in.close();
         }
-        Scene scene = new Scene(page, 800, 620);
+        Scene scene = new Scene(page, 800, 645);
         stage.setScene(scene);
         stage.sizeToScene();
         return (Initializable) loader.getController();

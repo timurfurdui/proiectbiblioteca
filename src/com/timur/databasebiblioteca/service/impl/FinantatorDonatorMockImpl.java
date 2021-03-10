@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author User
+ * @author Timur
  */
 public class FinantatorDonatorMockImpl implements FinantatorDonatorMockIntF {
     List<FinantatorDonator> listaFinantatoriDonatori;
